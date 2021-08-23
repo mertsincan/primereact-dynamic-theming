@@ -100,19 +100,11 @@ module.exports = function (webpackEnv) {
   // common function to get style loaders
   const getStyleLoaders = (cssOptions, preProcessor, isPrimeReactTheme) => {
     const loaders = [
-      isEnvDevelopment && {
+      {
         loader: require.resolve('style-loader'),
         options: {
           injectType: isPrimeReactTheme ? "lazyStyleTag" : "styleTag"
         }
-      },
-      isEnvProduction && {
-        loader: MiniCssExtractPlugin.loader,
-        // css is located in `static/css`, use '../../' to locate index.html folder
-        // in production `paths.publicUrlOrPath` can be a relative path
-        options: paths.publicUrlOrPath.startsWith('.')
-          ? { publicPath: '../../' }
-          : {},
       },
       {
         loader: require.resolve('css-loader'),

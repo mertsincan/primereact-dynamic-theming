@@ -2,7 +2,7 @@
   "name": "primereact-dynamic-theming-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mertsincan.github.io/primereact-dynamic-theming/example-1/",
+  "homepage": "https://mertsincan.github.io/primereact-dynamic-theming/",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",

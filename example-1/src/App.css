@@ -6,3 +6,7 @@
   border-radius: 4px;
   margin: 2rem;
 }
+
+button.p-link > img {
+  display: block;
+}
