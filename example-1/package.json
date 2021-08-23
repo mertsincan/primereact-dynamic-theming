@@ -2,7 +2,7 @@
   "name": "primereact-dynamic-theming-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mertsincan.github.io/primereact-dynamic-theming/",
+  "homepage": ".",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
@@ -74,7 +74,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/mertsincan/primereact-dynamic-theming.git",
+    "deploy": "PUBLIC_URL=https://mertsincan.github.io/primereact-dynamic-theming/ gh-pages -d build -r https://github.com/mertsincan/primereact-dynamic-theming.git",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
